@@ -6,99 +6,97 @@
 <title>GTSC | Growtopia Secret</title>
 
 <style>
-:root{
-  --bg:#0b0b0b;
-  --card:#141414;
-  --accent:#7c4dff;
-  --text:#f2f2f2;
-  --muted:#b0b0b0;
-}
-
-*{box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
-
 body{
   margin:0;
-  background:radial-gradient(circle at top,#1c1c1c,#000);
-  color:var(--text);
-  text-align:center;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#0a0a0a;
+  color:#f2f2f2;
 }
 
-/* HEADER */
 header{
-  padding:80px 20px 50px;
+  padding:90px 20px;
+  text-align:center;
+  background:linear-gradient(180deg,#0f0f0f,#050505);
 }
 
 header img{
-  width:150px;
-  margin-bottom:20px;
-  filter:drop-shadow(0 0 25px rgba(124,77,255,.6));
+  width:140px;
+  margin-bottom:25px;
 }
 
 h1{
-  font-size:46px;
+  font-size:48px;
   margin:0;
-  letter-spacing:3px;
+  letter-spacing:2px;
 }
 
-h1 span{color:var(--accent)}
+h1 span{color:#7c4dff}
 
 .subtitle{
-  color:var(--muted);
-  margin-top:8px;
-  font-size:16px;
+  margin-top:10px;
+  color:#aaa;
+  font-size:17px;
 }
 
-/* CONTENT */
-section{
-  max-width:900px;
+/* MAIN */
+main{
+  max-width:1100px;
   margin:0 auto;
-  padding:40px 20px 80px;
+  padding:60px 20px;
 }
 
-.card{
-  background:var(--card);
-  border-radius:18px;
-  padding:40px 25px;
-  box-shadow:0 0 30px rgba(0,0,0,.7);
+.block{
+  background:#111;
+  border-radius:14px;
+  padding:40px;
+  margin-bottom:40px;
+  border:1px solid #1f1f1f;
 }
 
+.block h2{
+  margin-top:0;
+  font-size:26px;
+  border-left:4px solid #7c4dff;
+  padding-left:12px;
+}
+
+/* BUTTONS */
 .buttons{
   margin-top:30px;
   display:flex;
-  flex-direction:column;
-  gap:22px;
-  align-items:center;
+  gap:25px;
+  flex-wrap:wrap;
 }
 
 .btn{
-  width:100%;
-  max-width:420px;
+  flex:1;
+  min-width:260px;
   padding:22px;
+  text-align:center;
   font-size:18px;
   font-weight:bold;
-  border-radius:14px;
   text-decoration:none;
-  color:white;
-  background:linear-gradient(135deg,var(--accent),#4b2cff);
-  box-shadow:0 0 25px rgba(124,77,255,.5);
-  transition:.25s;
+  color:#fff;
+  background:#7c4dff;
+  border-radius:12px;
+  transition:.2s;
 }
 
 .btn:hover{
-  transform:scale(1.05);
+  background:#6a3cff;
 }
 
 .btn.secondary{
-  background:#0f0f0f;
-  box-shadow:none;
-  border:2px solid var(--accent);
+  background:#151515;
+  border:1px solid #7c4dff;
 }
 
 /* FOOTER */
 footer{
-  padding:35px;
+  text-align:center;
+  padding:30px;
+  color:#777;
   font-size:14px;
-  color:var(--muted);
 }
 </style>
 </head>
@@ -111,9 +109,11 @@ footer{
   <div class="subtitle">Growtopia Secret</div>
 </header>
 
-<section>
-  <div class="card">
-    <h2>Resmi Sosyal Medya</h2>
+<main>
+
+  <div class="block">
+    <h2>Resmi Bağlantılar</h2>
+    <p>GTSC sunucusuna ait resmi sosyal medya bağlantıları.</p>
 
     <div class="buttons">
       <a class="btn" href="https://discord.gg/tqdRRrGNE" target="_blank">
@@ -123,13 +123,21 @@ footer{
       <a class="btn" href="https://youtube.com/@gtscofficial?si=Cq5v8HRyxkpsHuvq" target="_blank">
         Resmi YouTube Kanalımız!
       </a>
+    </div>
+  </div>
 
+  <div class="block">
+    <h2>Yönetim Kadrosu</h2>
+    <p>Sunucunun yönetim ve kurucu ekibi hakkında bilgi alın.</p>
+
+    <div class="buttons">
       <a class="btn secondary" href="founders.html">
-        Kurucular
+        Kurucular Sayfasına Git
       </a>
     </div>
   </div>
-</section>
+
+</main>
 
 <footer>
 © 2026 GTSC — Growtopia Secret
