@@ -4,242 +4,53 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GTSC | Growtopia Secret</title>
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap">
 <style>
-:root{
-  --bg:#0a0a0a;
-  --card:#141414;
-  --text:#f1f1f1;
-  --muted:#9b9b9b;
-  --accent:#7c4dff;
-}
-
-*{box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
-
 body{
   margin:0;
+  font-family:Orbitron,Arial;
   background:radial-gradient(circle at top,#1b1b1b,#000);
-  color:var(--text);
-}
-
-/* HEADER */
-header{
+  color:#fff;
   text-align:center;
-  padding:70px 20px 40px;
 }
+header{padding:90px 20px}
+header img{width:160px;filter:drop-shadow(0 0 30px #7c4dff)}
+h1{font-size:52px;margin:20px 0}
+h1 span{color:#7c4dff}
+p{color:#aaa}
 
-header img{
-  width:140px;
-  filter:drop-shadow(0 0 25px rgba(124,77,255,.6));
-}
-
-h1{
-  font-size:44px;
-  margin:10px 0 0;
-  letter-spacing:3px;
-}
-
-h1 span{color:var(--accent)}
-
-.subtitle{color:var(--muted);margin-top:6px}
-
-.buttons{
-  margin-top:35px;
+.menu{
+  margin-top:60px;
   display:flex;
   justify-content:center;
-  gap:18px;
+  gap:25px;
   flex-wrap:wrap;
 }
-
-.btn{
-  text-decoration:none;
-  padding:15px 30px;
-  border-radius:12px;
-  background:linear-gradient(135deg,var(--accent),#4b2cff);
+.menu a{
+  padding:22px 46px;
+  font-size:20px;
+  border-radius:18px;
+  background:linear-gradient(135deg,#7c4dff,#4b2cff);
   color:white;
-  font-weight:bold;
-  transition:.25s;
-}
-
-.btn:hover{
-  transform:scale(1.06);
-  box-shadow:0 0 25px rgba(124,77,255,.6);
-}
-
-/* SECTION */
-section{
-  max-width:1100px;
-  margin:70px auto;
-  padding:0 20px;
-}
-
-.card{
-  background:var(--card);
-  border-radius:18px;
-  padding:30px;
-  box-shadow:0 0 35px rgba(0,0,0,.7);
-}
-
-h2{
-  margin:0 0 25px;
-  font-size:26px;
-  border-left:4px solid var(--accent);
-  padding-left:12px;
-}
-
-/* FOUNDERS */
-.founders{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:25px;
-}
-
-.founder{
-  background:#0f0f0f;
-  border-radius:18px;
-  padding:28px 20px;
-  text-align:center;
-  transition:.3s;
-  position:relative;
-}
-
-.founder:hover{
-  transform:translateY(-6px);
-}
-
-/* AVATARS */
-.avatar{
-  width:96px;
-  height:96px;
-  border-radius:50%;
-  margin-bottom:14px;
-}
-
-/* NORMAL KURUCU EFEKT */
-.normal .avatar{
-  border:2px solid var(--accent);
-  box-shadow:0 0 18px rgba(124,77,255,.4);
-}
-
-/* BAŞ KURUCU ÖZEL */
-.owner{
-  border:2px solid var(--accent);
-  box-shadow:0 0 30px rgba(124,77,255,.9);
-}
-
-.owner .avatar{
-  border:3px solid var(--accent);
-  box-shadow:0 0 35px rgba(124,77,255,1);
-  animation:pulse 2s infinite;
-}
-
-/* TAÇ */
-.crown{
-  position:absolute;
-  top:-12px;
-  right:-12px;
-  font-size:26px;
-}
-
-@keyframes pulse{
-  0%{box-shadow:0 0 20px rgba(124,77,255,.6)}
-  50%{box-shadow:0 0 45px rgba(124,77,255,1)}
-  100%{box-shadow:0 0 20px rgba(124,77,255,.6)}
-}
-
-.role{
-  color:var(--muted);
-  font-size:14px;
-  margin-bottom:8px;
-}
-
-.founder a{
-  color:var(--accent);
   text-decoration:none;
-  font-weight:bold;
+  box-shadow:0 0 30px rgba(124,77,255,.6);
+  transition:.3s;
 }
-
-.badge{
-  margin-top:8px;
-}
-
-footer{
-  text-align:center;
-  padding:35px;
-  color:var(--muted);
-  font-size:14px;
-}
+.menu a:hover{transform:scale(1.1)}
 </style>
 </head>
-
 <body>
 
 <header>
   <img src="https://i.ibb.co/RpQRcgWy/logo.png">
   <h1>GT<span>SC</span></h1>
-  <div class="subtitle">Growtopia Secret</div>
+  <p>Growtopia Secret</p>
 
-  <div class="buttons">
-    <a class="btn" href="https://discord.gg/tqdRRrGNE" target="_blank">Discord</a>
-    <a class="btn" href="https://youtube.com/@gtscofficial?si=Cq5v8HRyxkpsHuvq" target="_blank">YouTube</a>
+  <div class="menu">
+    <a href="founders.html">👑 Kurucular</a>
+    <a href="social.html">🌐 Sosyal Medya</a>
   </div>
 </header>
-
-<section>
-<div class="card">
-<h2>Kurucular</h2>
-
-<div class="founders">
-
-<!-- BAŞ KURUCU -->
-<div class="founder owner">
-  <div class="crown">👑</div>
-
-  <img class="avatar"
-       src="https://unavatar.io/discord/1445055459441512480"
-       onerror="this.src='https://cdn.discordapp.com/embed/avatars/0.png'">
-
-  <div><b>Yakup</b></div>
-  <div class="role">Baş Kurucu</div>
-
-  <a href="https://discord.com/users/1445055459441512480" target="_blank">
-    Discord Profili
-  </a>
-</div>
-
-<!-- KURUCU -->
-<div class="founder normal">
-  <img class="avatar"
-       src="https://unavatar.io/discord/854028567994040371"
-       onerror="this.src='https://cdn.discordapp.com/embed/avatars/1.png'">
-
-  <div><b>Kurucu</b></div>
-  <div class="role">Founder</div>
-
-  <a href="https://discord.com/users/854028567994040371" target="_blank">
-    Discord Profili
-  </a>
-</div>
-
-<!-- KURUCU -->
-<div class="founder normal">
-  <img class="avatar"
-       src="https://unavatar.io/discord/924938521054171188"
-       onerror="this.src='https://cdn.discordapp.com/embed/avatars/2.png'">
-
-  <div><b>Kurucu</b></div>
-  <div class="role">Founder</div>
-
-  <a href="https://discord.com/users/924938521054171188" target="_blank">
-    Discord Profili
-  </a>
-</div>
-</div>
-</section>
-
-<footer>
-© 2026 GTSC — Growtopia Secret
-</footer>
 
 </body>
 </html>
