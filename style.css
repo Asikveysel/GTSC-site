@@ -1,0 +1,148 @@
+:root{
+  --bg:#0b0b0b;
+  --panel:#141414;
+  --text:#ffffff;
+  --muted:#bdbdbd;
+  --accent:#5865F2;
+  --youtube:#ff0000;
+  --gold:#d4af37;
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.hero{
+  text-align:center;
+  padding:50px 16px 30px;
+}
+
+.hero.small{
+  padding:30px 16px;
+}
+
+.logo{
+  width:110px;
+  height:auto;
+  margin-bottom:14px;
+  filter: drop-shadow(0 0 20px rgba(255,255,255,0.15));
+}
+
+.hero h1{
+  margin:0;
+  font-size:clamp(38px,6vw,56px);
+  letter-spacing:3px;
+}
+
+.subtitle{
+  margin-top:6px;
+  color:var(--muted);
+  letter-spacing:1px;
+}
+
+.social, .nav{
+  display:flex;
+  gap:16px;
+  justify-content:center;
+  flex-wrap:wrap;
+  padding:20px;
+}
+
+.btn{
+  padding:18px 30px;
+  border-radius:14px;
+  color:#fff;
+  text-decoration:none;
+  font-size:clamp(16px,4.5vw,20px);
+  background:#1f1f1f;
+  box-shadow:0 10px 30px rgba(0,0,0,.6);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+
+.btn:active{
+  transform:scale(0.95);
+  box-shadow:0 4px 15px rgba(0,0,0,.8);
+}
+
+.btn.discord{
+  background:linear-gradient(180deg,#6b77ff,#4f5ae0);
+}
+.btn.youtube{
+  background:linear-gradient(180deg,#ff3b3b,#d80000);
+}
+.btn.primary{
+  background:linear-gradient(180deg,#2a2a2a,#151515);
+}
+.btn.back{
+  margin-top:16px;
+  background:#202020;
+  font-size:15px;
+}
+
+footer{
+  text-align:center;
+  color:var(--muted);
+  padding:30px 10px;
+  font-size:14px;
+}
+
+.founders{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:22px;
+  padding:20px;
+  max-width:1100px;
+  margin:0 auto 40px;
+}
+
+.card{
+  background:linear-gradient(180deg,#161616,#101010);
+  border-radius:18px;
+  padding:24px;
+  text-align:center;
+  box-shadow:0 20px 50px rgba(0,0,0,.7);
+  transition:transform .2s ease;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+}
+
+.card img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:14px;
+  border:3px solid #222;
+}
+
+.card h2{
+  margin:6px 0;
+  font-size:22px;
+}
+
+.role{
+  color:var(--muted);
+  margin-bottom:14px;
+  display:block;
+}
+
+.profile{
+  display:inline-block;
+  padding:12px 20px;
+  border-radius:12px;
+  background:#1e1e1e;
+  text-decoration:none;
+  color:#fff;
+}
+
+.owner{
+  border:1px solid var(--gold);
+  box-shadow:0 0 30px rgba(212,175,55,.35);
+}
